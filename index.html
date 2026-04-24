@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h3>Formulario de registro</h3>
+    <p>Ingrese sus datos para registrarse</p>
+    <form action="" method="get">
+
+        <div class="form-group">
+            <label>estudiante</label>
+            <input type="radio" name="rol" value="estudiante" required>
+            <label>profesor</label>
+            <input type="radio" name="rol" value="profesor" required>
+            <label>administrativo</label>
+            <input type="radio" name="rol" value="administrativo" required>
+        </div>
+
+    <div class="form-group">
+        <label>nombre</label>
+        <input type="text" title="Ingrese su nombre" name="usuario" placeholder="Ingrese su nombre" required>
+    </div>
+    <div class="form-group">
+        <label>correo</label>
+        <input type="email" title="Ingrese su correo" name="correo" placeholder="Ingrese su correo" required>
+    </div>
+    <div class="form-group">
+        <label>contraseña</label>
+        <input type="password" title="Ingrese su contraseña" name="contraseña" placeholder="Ingrese su contraseña"required>
+    </div>
+    <div class="form-group">
+        <label>confirmar contraseña</label>
+        <input type="password" title="Confirme su contraseña" name="confirmar_contraseña" placeholder="Confirme su contraseña" required>
+    </div>
+    <div class="form-group">
+        <label>edad</label>
+        <input type="edad" title="Ingrese su edad" name="edad" placeholder="edad"required min="1", max="100">
+    </div>
+    <button type="submit">enviar</button>
+    </form>
+</body>
+</html>
